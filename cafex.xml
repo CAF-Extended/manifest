@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- build -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="build" remote="cafex" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="cafex" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="cafex" />
+
+  <!-- recovery -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="cafex" />
+  
+  <!-- packages -->  
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
+  <project path="packages/apps/BenzoSettings" name="packages_apps_BenzoSettings" remote="cafex" />
+  <remove-project name="platform/packages/apps/SnapdragonCamera" />
+  <project path="vendor/codeaurora/packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="cafex">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/app_snapcam_product.mk" src="app_snapcam_system_product.mk"/>
+  </project>
+  
+  <!-- frameworks -->    
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="cafex" />
+    
+  <!-- vendor -->  
+  <project path="vendor/extended" name="vendor_extended" remote="cafex" />  
+  <project path="vendor/qcom/common" name="vendor-qcom-common" remote="cafex" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />  
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="cafex">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/power" />  
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom-opensource_power" remote="cafex">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="hals"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="hals"/>
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />  
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cafex" />
+  <remove-project name="platform/vendor/codeaurora/telephony" />  
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
+  
+      
+</manifest>
