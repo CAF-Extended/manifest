@@ -3,7 +3,7 @@
 
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   
-  <default revision="refs/tags/LA.QSSI.11.0.r1-06200-qssi.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-06600-qssi.0"
            remote="caf"
            sync-j="4"
            sync-c="true" />
