@@ -3,7 +3,7 @@
 
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   
-  <default revision="refs/tags/LA.QSSI.11.0.r1-06600-qssi.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-08600-qssi.0"
            remote="caf"
            sync-j="4"
            sync-c="true" />
@@ -11,7 +11,7 @@
   <remote name="hals"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.12.r1-08300-SMxx50.0"/>		   
+          revision="refs/tags/LA.UM.9.12.r1-09300-SMxx50.0"/>		   
 		   
   <remote  name="cafex"
            fetch="https://github.com/CAF-Extended"
@@ -90,13 +90,13 @@
   <project name="platform/external/FP16" path="external/FP16"/>
   <project name="platform/external/FXdiv" path="external/FXdiv"/>
   <project name="platform/external/ImageMagick" path="external/ImageMagick"/>
+  <project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS"/>  
   <project name="platform/external/OpenCSD" path="external/OpenCSD"/>
   <project name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp"/>
   <project name="platform/external/XNNPACK" path="external/XNNPACK"/>
   <project name="platform/external/aac" path="external/aac"/>
   <project name="platform/external/adeb" path="external/adeb"/>
   <project name="platform/external/adhd" path="external/adhd"/>
-  <project name="platform/external/adt-infra" path="external/adt-infra"/>
   <project name="platform/external/android-clat" path="external/android-clat"/>
   <project name="platform/external/androidplot" path="external/androidplot"/>
   <project name="platform/external/angle" path="external/angle"/>
@@ -554,7 +554,6 @@
   <project name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement"/>
   <project name="platform/packages/apps/Settings" path="packages/apps/Settings"/>
   <project name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence"/>
-  <project name="platform/packages/apps/SnapdragonGallery" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonGallery"/>
   <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
   </project>
