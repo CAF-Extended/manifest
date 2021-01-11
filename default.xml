@@ -8,6 +8,12 @@
            sync-j="4"
            sync-c="true" />
 
+  <!-- AOSP -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-11.0.0_r27"/>           
+
   <remote name="hals"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
