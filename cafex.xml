@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+   <!-- Build and Core -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="build" remote="cafex" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="build_soong" remote="cafex" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Build and Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="art" remote="cafex" />
+  
+   <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="bionic" remote="cafex" />
+  
+  <!-- External -->
+  <project path="external/faceunlock" name="platform_external_faceunlock" remote="aex-lab" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="cafex" />  
+  <remove-project name="platform/external/honggfuzz" />  
+  <project path="external/honggfuzz" name="external_honggfuzz" remote="cafex" /> 
+    
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="cafex" />
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />  
+  <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" groups="pdk" remote="lineage" />  
+  
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="system_core" remote="cafex" />
+
+  <!-- Sepolicy -->
+  <project path="device/extended/sepolicy" name="device_extended_sepolicy" remote="cafex" />
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cafex" />    
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="cafex" />  
+    
+  <!-- recovery -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="cafex" />
+  
+  <!-- packages -->  
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="cafex" />
+  <project path="packages/apps/DU-Themes" name="packages_apps_DU-Themes" remote="cafex" />  
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="cafex" />
+  <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="cafex" />
+  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="lineage" />
+  <remove-project name="platform/packages/apps/ThemePicker" />  
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="cafex" />  
+  <project path="vendor/codeaurora/packages/apps/SnapdragonCamera" name="packages_apps_SnapdragonCamera" remote="cafex">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/app_snapcam_product.mk" src="app_snapcam_system_product.mk"/>
+  </project>
+  
+  <!-- frameworks -->    
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="frameworks_base" remote="cafex" />
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="frameworks_av" remote="cafex" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="frameworks_native" remote="cafex" />      
+
+  <!-- frameworks --> 
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="cafex" />
+        
+  <!-- vendor -->  
+  <project path="vendor/extended" name="vendor_extended" remote="cafex" />
+  <project path="vendor/overlay" name="vendor_overlay" remote="cafex" />  
+  <project path="vendor/qcom/common" name="vendor_qcom_common" remote="cafex" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="cafex">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <remove-project name="platform/vendor/codeaurora/telephony" />  
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom-opensource_power" remote="cafex" />  
+  
+  <!-- GApps -->
+  <project path="vendor/google/pixel" name="vendor_google_pixel" remote="cafex" />   
+  <project path="vendor/google/gms" name="vendor-google-gms" remote="cafex-lab" />  
+      
+</manifest>
