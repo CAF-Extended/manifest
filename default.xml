@@ -3,7 +3,7 @@
 
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   
-  <default revision="refs/tags/LA.QSSI.11.0.r1-08600-qssi.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-12100-qssi.0"
            remote="caf"
            sync-j="4"
            sync-c="true" />
@@ -12,12 +12,12 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-11.0.0_r27"/>           
+          revision="refs/tags/android-11.0.0_r37"/>       
 
   <remote name="hals"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.12.r1-09300-SMxx50.0"/>		   
+          revision="refs/tags/LA.UM.9.14.r1-16700-LAHAINA.0"/>		   
 		   
   <remote  name="cafex"
            fetch="https://github.com/CAF-Extended"
@@ -31,7 +31,18 @@
    <remote  name="blobs"
            fetch="https://github.com/ThankYouMario"
            revision="refs/heads/ruby" />
-                     
+
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           revision="refs/heads/lineage-18.1" />
+ 
+   <remote  name="aex-lab"
+           fetch="https://gitlab.com/AospExtended"
+           revision="refs/heads/11.x" />                     
+
+   <remote  name="cafex-lab"
+           fetch="https://gitlab.com/caf-extended"
+           revision="refs/heads/11.0" />                      
 		   
   <project name="device/amlogic/yukawa"/>
   <project clone-depth="1" name="device/amlogic/yukawa-kernel"/>
@@ -96,7 +107,7 @@
   <project name="platform/external/FP16" path="external/FP16"/>
   <project name="platform/external/FXdiv" path="external/FXdiv"/>
   <project name="platform/external/ImageMagick" path="external/ImageMagick"/>
-  <project name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS"/>  
+
   <project name="platform/external/OpenCSD" path="external/OpenCSD"/>
   <project name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp"/>
   <project name="platform/external/XNNPACK" path="external/XNNPACK"/>
