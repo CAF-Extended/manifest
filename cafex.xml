@@ -59,6 +59,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="cafex" />
+  <project path="packages/apps/CafexSettings" name="packages_apps_CafexSettings" remote="cafex" />  
   <project path="packages/apps/DU-Themes" name="packages_apps_DU-Themes" remote="cafex" />  
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="cafex" />
   <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="cafex" />
