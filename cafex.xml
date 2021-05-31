@@ -36,6 +36,7 @@
   <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="cafex" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />  
+  <project path="hardware/cafex/hal" name="hardware_cafex" groups="pdk" remote="cafex" />    
   <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" groups="pdk" remote="lineage" />  
   
   <!-- System -->
