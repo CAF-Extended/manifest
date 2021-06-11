@@ -568,9 +568,6 @@
   <project name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement"/>
   <project name="platform/packages/apps/Settings" path="packages/apps/Settings"/>
   <project name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence"/>
-  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
-  </project>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
