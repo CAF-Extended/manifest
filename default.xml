@@ -3,7 +3,7 @@
 
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   
-  <default revision="refs/tags/LA.QSSI.11.0.r1-12100-qssi.0"
+  <default revision="refs/tags/LA.QSSI.11.0.r1-12300-qssi.0"
            remote="caf"
            sync-j="4"
            sync-c="true" />
@@ -17,7 +17,7 @@
   <remote name="hals"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.14.r1-16700-LAHAINA.0"/>		   
+          revision="refs/tags/LA.UM.9.14.r1-16900-LAHAINA.0"/>		   
 		   
   <remote  name="cafex"
            fetch="https://github.com/CAF-Extended"
