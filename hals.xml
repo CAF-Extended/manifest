@@ -67,7 +67,6 @@
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="hals"/>
   <project name="platform/vendor/qcom/holi" path="device/qcom/holi" remote="hals"/>
   <project name="platform/vendor/qcom/kona" path="device/qcom/kona" remote="hals"/>
-  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina" remote="hals"/>
   <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="hals">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
