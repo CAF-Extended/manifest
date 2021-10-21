@@ -24,15 +24,10 @@
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" remote="hals"/>
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" remote="hals"/>
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" remote="hals"/>
-  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" remote="hals">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
-  </project>
-  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="hals"/>
   <project groups="cyborg" name="platform/vendor/opensource/audio-kernel" path="kernel/msm-5.4/techpack/audio" remote="hals"/>
   <project groups="cyborg" name="platform/vendor/opensource/camera-kernel" path="kernel/msm-5.4/techpack/camera" remote="hals"/>
   <project groups="cyborg" name="platform/vendor/opensource/dataipa" path="kernel/msm-5.4/techpack/dataipa" remote="hals"/>
   <project groups="cyborg" name="platform/vendor/opensource/display-drivers" path="kernel/msm-5.4/techpack/display" remote="hals"/>
-  <project groups="cyborg" name="platform/vendor/opensource/sched" path="kernel/msm-5.4/techpack/sched" remote="hals"/>
   <project groups="cyborg" name="platform/vendor/opensource/video-driver" path="kernel/msm-5.4/techpack/video" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="hals">
@@ -49,8 +44,8 @@
   </project>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" remote="hals">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk" remote="hals"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk" remote="hals"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" remote="hals"/>
@@ -67,6 +62,7 @@
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="hals"/>
   <project name="platform/vendor/qcom/holi" path="device/qcom/holi" remote="hals"/>
   <project name="platform/vendor/qcom/kona" path="device/qcom/kona" remote="hals"/>
+  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina" remote="hals"/>
   <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="hals">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>

@@ -2,7 +2,7 @@
   <img src="https://i.imgur.com/A5riwr0.png"/>
 </p>
 
-CAF-Extended Eleven
+CAF-Extended Twelve
 
 Pure CAF rom with minimal Customisations
 
@@ -14,12 +14,12 @@ To initialize your local repository using the AospExtended trees, use a
 command like this:
 
 ```bash
-  repo init -u https://github.com/CAF-Extended/manifest -b 11.0
+  repo init -u https://github.com/CAF-Extended/manifest -b 12.0
 ```
 To initialize a shallow clone, which will save even more space & time, use a command like this:
 
 ```bash
-  repo init --depth=1 -u https://github.com/CAF-Extended/manifest -b 11.0
+  repo init --depth=1 -u https://github.com/CAF-Extended/manifest -b 12.0
 ```
   
 Then to sync up:
