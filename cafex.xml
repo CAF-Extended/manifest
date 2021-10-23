@@ -48,6 +48,7 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="cafex" />  
   <remove-project name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="cafex" />
   <remove-project name="platform/packages/modules/Wifi" />
@@ -87,6 +88,9 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>    
   <remove-project name="platform/vendor/codeaurora/telephony" />
-  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />   
+  <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
+
+  <!-- GApps -->
+  <project path="vendor/gapps" name="vendor_gapps" remote="cafex-lab" />  
           
 </manifest>

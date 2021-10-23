@@ -52,6 +52,9 @@
   <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" remote="hals"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" remote="hals"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" remote="hals">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>  
   <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" remote="hals">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
   </project>

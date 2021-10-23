@@ -22,7 +22,11 @@
   <remote  name="cafex"
            fetch="https://github.com/CAF-Extended"
            revision="refs/heads/12.0" />
-		   
+           
+   <remote  name="cafex-lab"
+           fetch="https://gitlab.com/caf-extended"
+           revision="refs/heads/12.0" />  
+           		   
   <project name="device/amlogic/yukawa"/>
   <project clone-depth="2" name="device/amlogic/yukawa-kernel"/>
   <project name="device/common"/>
