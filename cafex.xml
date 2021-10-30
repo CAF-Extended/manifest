@@ -2,6 +2,8 @@
 <manifest>
 
    <!-- Build and Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="art" remote="cafex" />    
   <remove-project name="platform/build" />
   <project path="build/make" name="build" remote="cafex" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -38,7 +40,9 @@
   
   <!-- external -->
   <project path="external/colorkt" name="external_colorkt" remote="cafex" />
-  <project path="external/themelib" name="external_themelib" remote="cafex" />  
+  <project path="external/themelib" name="external_themelib" remote="cafex" />
+  <remove-project name="platform/external/selinux" />
+  <project path="external/selinux" name="external_selinux" remote="cafex" />  
   
   <!-- Hardware -->
   <remove-project name="platform/hardware/qcom/wlan" />
@@ -74,6 +78,7 @@
   <project path="system/tools/hidl" name="system_tools_hidl" remote="cafex" />              
   <!-- vendor -->  
   <project path="vendor/extended" name="vendor_extended" remote="cafex" />
+  <project path="vendor/overlay" name="vendor_overlay" remote="cafex" />    
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="cafex" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project name="vendor_qcom-opensource_power" path="vendor/qcom/opensource/power" remote="cafex">
@@ -90,7 +95,11 @@
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" remote="cafex" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
-  </project>    
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="cafex" />   
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cafex" />   
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
 
