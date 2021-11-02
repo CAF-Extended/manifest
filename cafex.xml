@@ -47,7 +47,8 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="cafex" />
-  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />  
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="cafex" />  
 
  <!-- libcore -->
   <remove-project name="platform/libcore" />
