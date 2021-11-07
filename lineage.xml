@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" revision="lineage-19.0"  />  
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-18.1-caf" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom,pdk-qcom" remote="cafex" >
     <!-- add guard for AOSP hardware/qcom dir -->
