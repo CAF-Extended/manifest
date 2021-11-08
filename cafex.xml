@@ -103,7 +103,9 @@
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cafex" />   
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
-
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cafex" />
+  
   <!-- GApps -->
   <project path="vendor/gapps" name="vendor_gapps" remote="cafex-lab" />  
           
