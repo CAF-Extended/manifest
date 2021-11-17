@@ -20,6 +20,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+   <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="bionic" remote="cafex" />
+  
   <!-- Device -->
   <remove-project name="device/qcom/common" />
   <project path="device/qcom/common" name="device_qcom_common" remote="cafex" >
@@ -108,6 +112,7 @@
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cafex" />
   <project path="vendor/qcom/common" name="vendor_qcom_common" remote="cafex" />  
+  <project path="vendor/qcom/sdclang" name="vendor_qcom_sdclang" remote="cafex" />
   
   <!-- GApps -->
   <project path="vendor/gapps" name="vendor_gapps" remote="cafex-lab" />  
