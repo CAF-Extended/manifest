@@ -48,7 +48,13 @@
   <project path="external/colorkt" name="external_colorkt" remote="cafex" />
   <project path="external/themelib" name="external_themelib" remote="cafex" />
   <remove-project name="platform/external/selinux" />
-  <project path="external/selinux" name="external_selinux" remote="cafex" />  
+  <project path="external/selinux" name="external_selinux" remote="cafex" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="external_mksh" remote="cafex" /> 
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="cafex" /> 
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="cafex" />       
   
   <!-- Hardware -->
   <remove-project name="platform/hardware/qcom/wlan" />
