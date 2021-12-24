@@ -42,7 +42,9 @@
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="frameworks_av" remote="cafex" />
   <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="frameworks_native" remote="cafex" />       
+  <project path="frameworks/native" name="frameworks_native" remote="cafex" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="cafex" />        
   
   <!-- external -->
   <project path="external/colorkt" name="external_colorkt" remote="cafex" />
@@ -57,6 +59,8 @@
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="cafex" />       
   
   <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="cafex" />  
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="cafex" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />
@@ -77,8 +81,12 @@
   <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="cafex" />
   <remove-project name="platform/packages/modules/Connectivity" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="cafex" />    
-         
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="cafex" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="cafex" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="cafex" />
+           
   <!-- System -->
   <remove-project name="platform/system/core" />
   <project path="system/core" name="system_core" remote="cafex" />
