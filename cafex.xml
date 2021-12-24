@@ -75,6 +75,10 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="cafex" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="cafex" />  
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="cafex" />  
   <remove-project name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="cafex" />
