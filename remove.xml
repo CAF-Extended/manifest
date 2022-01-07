@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Build and Core -->
+  <remove-project name="platform/art" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+
+  <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  
   <!-- Device -->
   <remove-project name="device/amlogic/yukawa"/>
   <remove-project name="device/amlogic/yukawa-kernel"/>
@@ -26,14 +34,34 @@
   <remove-project name="device/google/atv"/>
   <remove-project name="device/google/trout"/>
   <remove-project name="device/google/vrservices"/>
+  <remove-project name="device/qcom/common" />
+  <remove-project name="device/qcom/vendor-common" />
   <remove-project name="device/sample"/>
 
+  <!-- Recovery -->
+  <remove-project name="platform/bootable/recovery" />
+
+  <!-- frameworks -->
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+
+  <!-- external -->
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/jemalloc_new" />
+
   <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
-  <remove-project name="platform/hardware/qcom/bootctrl" />  
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <remove-project name="platform/hardware/libhardware" />
 
   <!-- Kernel -->
   <remove-project name="kernel/msm-5.4" />
@@ -48,5 +76,37 @@
   <remove-project name="platform/vendor/qcom-opensource/wlan/fw-api" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
+
+  <!-- libcore -->
+  <remove-project name="platform/libcore" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/services/Telephony" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="device/qcom/sepolicy" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <remove-project name="platform/system/tools/hidl" />
+  <remove-project name="platform/system/libhwbinder" />
+
+  <!-- vendor -->
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
 
 </manifest>

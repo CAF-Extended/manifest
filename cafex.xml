@@ -2,9 +2,7 @@
 <manifest>
 
    <!-- Build and Core -->
-  <remove-project name="platform/art" />
   <project path="art" name="art" remote="cafex" />    
-  <remove-project name="platform/build" />
   <project path="build/make" name="build" remote="cafex" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -14,128 +12,88 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <remove-project name="platform/build/soong" />
   <project path="build/soong" name="build_soong" remote="cafex" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
    <!-- Bionic -->
-  <remove-project name="platform/bionic" />
   <project path="bionic" name="bionic" remote="cafex" />
   
   <!-- Device -->
-  <remove-project name="device/qcom/common" />
   <project path="device/qcom/common" name="device_qcom_common" remote="cafex" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <remove-project name="device/qcom/vendor-common" />
   <project path="device/qcom/vendor-common" name="device_qcom_vendor-common" remote="cafex" />
       
   <!-- Recovery -->  
-  <remove-project name="platform/bootable/recovery" />
   <project path="bootable/recovery" name="bootable_recovery" remote="cafex" />
 
   <!-- frameworks -->    
-  <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="frameworks_base" remote="cafex" />
-  <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="frameworks_av" remote="cafex" />
-  <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="frameworks_native" remote="cafex" />
-  <remove-project name="platform/frameworks/opt/telephony" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="cafex" />        
   
   <!-- external -->
   <project path="external/colorkt" name="external_colorkt" remote="cafex" />
   <project path="external/themelib" name="external_themelib" remote="cafex" />
-  <remove-project name="platform/external/selinux" />
   <project path="external/selinux" name="external_selinux" remote="cafex" />
-  <remove-project name="platform/external/mksh" />
   <project path="external/mksh" name="external_mksh" remote="cafex" /> 
-  <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="cafex" /> 
-  <remove-project name="platform/external/jemalloc_new" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="cafex" />       
   
   <!-- Hardware -->
-  <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="cafex" />  
-  <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" remote="cafex" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="cafex" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="cafex" />  
-  <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="cafex" />
   
   <!-- libcore -->
-  <remove-project name="platform/libcore" />
   <project path="libcore" name="libcore" remote="cafex" />
    
   <!--Manifest -->
   <project path="manifest" name="manifest" remote="cafex" />
 
   <!-- Packages -->
-  <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
-  <remove-project name="platform/packages/apps/Messaging" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="cafex" />
-  <remove-project name="platform/packages/apps/Dialer" />
   <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="cafex" />  
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="cafex" />  
-  <remove-project name="platform/packages/modules/Permission" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="cafex" />
-  <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="cafex" />
-  <remove-project name="platform/packages/modules/Connectivity" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="cafex" />
-  <remove-project name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="cafex" />
-  <remove-project name="platform/packages/services/Telephony" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="cafex" />
            
   <!-- System -->
-  <remove-project name="platform/system/core" />
   <project path="system/core" name="system_core" remote="cafex" />
-  <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="system_sepolicy" remote="cafex" />
-  <remove-project name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cafex" />
-  <remove-project name="device/qcom/sepolicy_vndr" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="cafex" />
   <project path="device/extended/sepolicy" name="device_extended_sepolicy" remote="cafex" />  
-  <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="system_tools_hidl" remote="cafex" />              
-  <remove-project name="platform/system/libhwbinder" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="cafex" />              
   
   <!-- vendor -->  
   <project path="vendor/extended" name="vendor_extended" remote="cafex" />
   <project path="vendor/overlay" name="vendor_overlay" remote="cafex" />    
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="cafex" />
-  <remove-project name="platform/vendor/qcom-opensource/power" />
   <project name="vendor_qcom-opensource_power" path="vendor/qcom/opensource/power" remote="cafex">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
   </project>  
-  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom-opensource_interfaces" remote="cafex" />  
-  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom-opensource_fm-commonsys" remote="cafex" />  
-  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom-opensource_vibrator" remote="cafex" />
-  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor-qcom-opensource-display-commonsys-intf" remote="cafex" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
-  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom-opensource_bluetooth-commonsys-intf" remote="cafex" />   
-  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cafex" />   
-  <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_telephony" remote="cafex" />
-  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cafex" />
   <project path="vendor/qcom/common" name="vendor_qcom_common" remote="cafex" />  
   <project path="vendor/qcom/sdclang" name="vendor_qcom_sdclang" remote="cafex" />
