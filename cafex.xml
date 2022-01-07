@@ -68,10 +68,13 @@
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="cafex" />
   
- <!-- libcore -->
+  <!-- libcore -->
   <remove-project name="platform/libcore" />
   <project path="libcore" name="libcore" remote="cafex" />
    
+  <!--Manifest -->
+  <project path="manifest" name="manifest" remote="cafex" />
+
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cafex" />
