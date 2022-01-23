@@ -3,7 +3,7 @@
 
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   
-  <default revision="refs/tags/LA.QSSI.12.0.r1-04900-qssi.0"
+  <default revision="refs/tags/LA.QSSI.12.0.r1-05800-qssi.0"
            remote="caf"
            sync-j="4"
            sync-c="true" />
@@ -12,12 +12,12 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-12.0.0_r18"/>
+          revision="refs/tags/android-12.0.0_r27"/>
           
   <remote name="hals"
           fetch="https://source.codeaurora.org/quic/la"
           review="codeaurora.org"
-          revision="refs/tags/LA.UM.9.14.r1-18300.02-LAHAINA.QSSI12.0"/>		   
+          revision="refs/tags/LA.UM.9.14.r1-18600.02-LAHAINA.QSSI12.0"/>		   
 		   
   <remote  name="cafex"
            fetch="https://github.com/CAF-Extended"
@@ -155,7 +155,7 @@
   <project name="platform/external/cblas" path="external/cblas"/>
   <project name="platform/external/cbor-java" path="external/cbor-java"/>
   <project name="platform/external/chromium-trace" path="external/chromium-trace"/>
-  <project clone-depth="1" name="platform/external/chromium-webview" path="external/chromium-webview"/>
+  <project clone-depth="1" name="platform/external/chromium-webview" path="external/chromium-webview" remote="aosp"/>
   <project name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cldr" path="external/cldr"/>
   <project name="platform/external/cn-cbor" path="external/cn-cbor"/>
@@ -639,7 +639,7 @@
   <project name="platform/external/tensorflow" path="external/tensorflow"/>
   <project name="platform/external/testng" path="external/testng"/>
   <project name="platform/external/tflite-support" path="external/tflite-support"/>
-  <project clone-depth="2" name="platform/external/timezone-boundary-builder" path="external/timezone-boundary-builder"/>
+  <project clone-depth="2" name="platform/external/timezone-boundary-builder" path="external/timezone-boundary-builder"  remote="aosp"/>
   <project name="platform/external/tinyalsa" path="external/tinyalsa"/>
   <project name="platform/external/tinyalsa_new" path="external/tinyalsa_new"/>
   <project name="platform/external/tinycompress" path="external/tinycompress"/>
